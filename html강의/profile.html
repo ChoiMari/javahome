@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <!--이미지에 스타일 주기 : 이미지 태그안에 style="원하는 속성 주면 됨"
+    크기조절 style="width: 100px; -> 가로 크기 100px로 margin-left:30px; -> 왼쪽에 마진(여백)30px줌"
+    style=""속성값은 ""안에 ;로 구분함 스타일 여러개 줄 때는  ""안에서 ;로 구분해서 주기
+    margin-top:30px; 위쪽 마진(여백) 30px줌 아래쪽 마진(여백) margin-bottom: 10px;-->
+    <img src="testp/profile.png" style="width: 100px; margin-left:30px; margin-top:30px; margin-bottom: 10px;" alt="기본 프로필" />
+    <h3 style="margin-left:30px;">이름 : Default </h3>
+    <p style="margin-left:30px;">기본 프로필 페이지 입니다 ㅎㅎ</p>
+    <form style="margin-left: 30px; margin-bottom: 10px;">
+        <input type="file">
+    </form>
+    <button style="margin-left: 30px;">수정</button>
+    <!--이미지 가운데 정렬하기 style="display: block;margin-left: auto; margin-right: auto;"-->
+    <img src="testp/profile.png" style="width: 100px; display: block;
+            margin-left: auto; margin-right: auto;"
+          alt="기본 프로필"/>
+    
+    <!--글자에 스타일 주기 전부 style="" 속성 안에서 ;로 구분해서 넣어주면 된다-->
+    <!--글자 사이즈 글자 태그 안에 style="font-size:크기px;"" 단위 px말고도 vw도 있음
+    16vw면 현재 브라우저 창의 16배라는 뜻이라고.. %도 가능 부모태그(나를 감싸고 있는 태그)의 몇 %에 비례하는 크기로 하겠다라는 의미 -->
+    <!--font 종류 font-family:'gulim'; 폰트 굴림으로 설정함-->
+    <!-- letter-spacing: 크기px; -> 자간. 글자 사이사이의 간격 주기-->
+    <!--text-align: center; -> 글자 가운데 정렬-->
+    <h3 style="font-size: 15px; font-family: 'gulim'; color: #0FF5D8;
+        letter-spacing: 1px; text-align: center;"> 이름 : Default </h3>
+
+    <!--일부 글자에만 스타일 주기 <span>태그 안에 감싸서 스타일 속성 주기
+        <span>태그 : 글자를 감쌀 수 있는 별 뜻 없는 태그(인라인단위로 감쌈)-->
+    <!--글씨 굵게 하기style="font-weight: 500;" 또는 <strong>로 감싸기-->
+    <p style="text-align: center;"><span style="color: aquamarine; 
+        font-weight: 500;">Front-end</span> Developer</p>
+        <p style="text-align: center;"><strong>Front-end</strong> Developer</p>
+    <!--박스 집어 넣기 <div>화면 분할(블럭단위) -->
+    <div class="box">안녕</div> <!--link태그로 css파일과 연결안해서 class 속성값 주어도 스타일 적용 안됨. -->
+</body>
+</html>
