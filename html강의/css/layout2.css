@@ -15,16 +15,22 @@
     height: 400px; /*세로크기*/
     height: 400px; /*세로크기*/
     background: #6482FA; /*배경색 줌*/
-    float: left; /*이 요소를 띄워서 왼쪽에 정렬해 주세요 라는 뜻
+  /*  float: left; 이 요소를 띄워서 왼쪽에 정렬해 주세요 라는 뜻
     이걸 안 넣으면 div의 기본값 display:block때문에 가로행 전부 차지함.*/
+    display: inline-block;
+    vertical-align: top; /*인라인속성 문제 해결 상하정렬 위쪽정렬(top)로 설정함.*/
 }
 
+.content {
+    
+}
 
 .right {
     width: 85%;
     height: 400px;
     background: #34FA97;
-    float: left; 이 요소를 띄워서 왼쪽에 정렬해주세요*/
+  /*  float: left; /*이 요소를 띄워서 왼쪽에 정렬해주세요*/
+    display: inline-block;
 }
 
 .footer {
@@ -33,5 +39,3 @@
     background: #34FADA;
     clear: both;/*float다음에 오는 이상 현상 해결*/
 }
-
-
